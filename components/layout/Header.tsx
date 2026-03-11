@@ -1,15 +1,9 @@
 "use client"
 
 import { Container } from "@/components/Container"
+import { navLinks } from "@/lib/nav-links"
 import { ThemeToggle } from "./ThemeToggle"
 import { MobileMenu } from "./MobileMenu"
-
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Docs", href: "#docs" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
-]
 
 export function Header() {
   return (

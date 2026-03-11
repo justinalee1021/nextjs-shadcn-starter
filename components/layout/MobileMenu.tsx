@@ -1,6 +1,7 @@
 "use client"
 
 import { Menu } from "lucide-react"
+import { navLinks } from "@/lib/nav-links"
 import {
   Sheet,
   SheetContent,
@@ -9,13 +10,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
-
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Docs", href: "#docs" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
-]
 
 export function MobileMenu() {
   return (

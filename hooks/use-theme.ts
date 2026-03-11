@@ -6,8 +6,7 @@ import { ThemeContext } from "@/providers/ThemeProvider"
 export function useTheme() {
   const context = useContext(ThemeContext)
   if (!context) {
-    // SSR 중이거나 context가 없을 때는 기본값 반환
-    return { theme: "light" as const, setTheme: () => {} }
+    throw new Error("useTheme은 ThemeProvider 내부에서만 사용할 수 있습니다")
   }
   return context
 }
