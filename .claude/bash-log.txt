@@ -1,0 +1,5 @@
+ls -lah - 현재 프로젝트의 파일 및 디렉토리 목록 표시
+find . -type f -not -path './node_modules/*' -not -path './.next/*' -not -path './.git/*' -not -path './.claude/*' | head -50 - node_modules와 시스템 폴더 제외한 소스 파일 목록
+git status - Git 작업 트리 상태 확인
+git diff - 변경사항 확인
+git add .claude/settings.local.json .claude/bash-log.txt - 훅 설정 파일을 스테이징
